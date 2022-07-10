@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * 创建UserController类,user-web模块依赖于user-service和user-domain模块，所以需在pom.xml文件中引入user-service和user-domain依赖
- * @author qzz
+ * 创建UserController类,user-web模块依赖于user-service和user-domain模块，
+ * 所以需在pom.xml文件中引入user-service和user-domain依赖
  */
 @RestController
 @RequestMapping("/user")

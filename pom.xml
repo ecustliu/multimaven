@@ -40,6 +40,13 @@
         </dependency>
     </dependencies>
 
+    <!--dependencyManagement标签作用：
+    1.用在项目顶层的pom文件中，统一管理项目的依赖和版本
+    2.该标签不能用在子项目的pom文件中，因为在该标签里面的依赖只是声明依赖，并不实现引入
+    3.这个标签里面的依赖不会主动引入到子项目中，子项目要引用这里面的依赖就需要显式声明，但是可以不用指定版本，
+      因为version和scope都读取自顶层pom
+    4.如果某个子项目自定义版本，只需要在dependencies中声明即可
+    -->
     <dependencyManagement>
         <dependencies>
             <dependency>
